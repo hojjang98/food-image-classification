@@ -27,21 +27,19 @@ Curious and excited, I decided to jump into it and explore image classification 
 
 ## 🧱 Project Structure
 
+```
 food-image-classification/
 ├── data/
-│   ├── raw/                  # Original downloaded dataset
-│   └── processed/            # Resized / cleaned / sampled images
-│
+│   ├── raw/            # Original downloaded dataset
+│   └── processed/      # Resized / cleaned / sampled images
 ├── notebooks/
-│   ├── 01_eda.ipynb          # EDA & class distribution, sample visuals
-│   └── 02_modeling.ipynb     # CNN / transfer learning, training + evaluation
-│
-├── models/                   # Saved model weights (.h5 or .pt)
-│
-├── figures/                  # Plots, confusion matrix, prediction samples
-│
-├── utils/                    # (optional) helper functions like image loading, evaluation
+│   ├── 01_eda.ipynb         # EDA & class distribution, sample visuals
+│   └── 02_modeling.ipynb    # CNN / transfer learning, training + evaluation
+├── models/             # Saved model weights (.h5 or .pt)
+├── figures/            # Plots, confusion matrix, prediction samples
+├── utils/              # (optional) helper functions like image loading, evaluation
 │   └── data_loader.py
-│
 ├── README.md
 └── requirements.txt
+```
+
