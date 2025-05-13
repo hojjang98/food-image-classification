@@ -43,3 +43,6 @@ food-image-classification/
 └── requirements.txt
 ```
 
+🔗 **You can download the trained model here:**
+
+> 👉 [Download `food_classifier_resnet50.h5`](https://drive.google.com/file/d/11Mul4QYPeP-9iCQoTnW2CJaXZ8JZs8CW/view?usp=drive_link)
