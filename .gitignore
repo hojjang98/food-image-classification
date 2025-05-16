@@ -1,1 +1,9 @@
-"models/*.h5" 
+
+models/*.h5
+
+images/
+
+.ipynb_checkpoints/
+
+*.DS_Store
+*.log

@@ -14,35 +14,43 @@ Curious and excited, I decided to jump into it and explore image classification 
 
 ## 📁 Dataset
 
-- **Source**: [Fruits and Vegetables Image Recognition DataSet](https://www.kaggle.com/datasets/kritikseth/fruit-and-vegetable-image-recognition)
-- **Size**: 101 food categories, 101,000 images  
-  *(Note: I will use a smaller subset for faster experimentation.)*
+- **Source**: Images were collected through Google Image crawling for educational and non-commercial use only.
+- **Categories**: A custom subset of food-related categories including fruits, vegetables, and common dishes.
+- **Availability**:  
+  Image files are **excluded from this repository** to avoid copyright issues.
+
+> ⚠️ All images used in this project were collected solely for educational purposes and remain stored locally.  
+> If you want to build a similar dataset, refer to `food-image-crawling.ipynb`.
 
 ## 🔧 Techniques Used
 
 - Convolutional Neural Networks (CNN)
-- Transfer Learning (ResNet, EfficientNet)
+- Transfer Learning (e.g., MobileNetV2)
 - Image Augmentation (`ImageDataGenerator`)
 - Evaluation: Accuracy, Confusion Matrix, Visual Predictions
 
 ## 🧱 Project Structure
 
-```
+```bash
 food-image-classification/
-├── data/
-│   ├── raw/            # Original downloaded dataset
-│   └── processed/      # Resized / cleaned / sampled images
-├── notebooks/
-│   ├── 01_eda.ipynb         # EDA & class distribution, sample visuals
-│   └── 02_modeling.ipynb    # CNN / transfer learning, training + evaluation
-├── models/             # Saved model weights (.h5 or .pt)
-├── figures/            # Plots, confusion matrix, prediction samples
-├── utils/              # (optional) helper functions like image loading, evaluation
-│   └── data_loader.py
-├── README.md
-└── requirements.txt
+├── .gitignore                        # Git ignore rules (e.g., images/, .h5 files)
+├── best_model.h5                    # Trained model (excluded from future commits)
+├── models/                          # Folder for storing model files
+├── food-image-crawling.ipynb        # Web crawler using Selenium
+├── food-image-classification(WIP).ipynb  # Main training notebook (CNN + Transfer Learning)
+├── .ipynb_checkpoints/              # Jupyter auto-save folder
+├── .gitattributes                   # Git LFS / text file settings
+├── README.md                        # Project overview
 ```
 
-🔗 **You can download the trained model here:**
 
-> 👉 [Download `food_classifier_resnet50.h5`](https://drive.google.com/file/d/11Mul4QYPeP-9iCQoTnW2CJaXZ8JZs8CW/view?usp=drive_link)
+## 🚫 Notes on Image Usage
+
+- All crawled image data is used strictly for **non-commercial, educational** purposes.
+- To ensure proper copyright respect, these assets are **excluded from version control** using `.gitignore`.
+- The dataset is **not redistributed**, but the tools to build it are provided in this repository.
+
+---
+
+Feel free to fork this repo and build your own food image classifier!  
+Explore, visualize, model — and don’t forget to clean your data! 🍜🧼
