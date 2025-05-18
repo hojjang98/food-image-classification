@@ -34,14 +34,12 @@ Curious and excited, I decided to jump into it and explore image classification 
 ```bash
 food-image-classification/
 ├── .gitignore                        # Git ignore rules (e.g., images/, .h5 files)
-├── best_model.h5                    # Trained model (excluded from future commits)
-├── models/                          # Folder for storing model files
-├── food-image-crawling.ipynb        # Web crawler using Selenium
-├── food-image-classification(WIP).ipynb  # Main training notebook (CNN + Transfer Learning)
-├── .ipynb_checkpoints/              # Jupyter auto-save folder
 ├── .gitattributes                   # Git LFS / text file settings
+├── figures/                         # Evaluation plots, confusion matrix, etc.
+├── notebooks/                       # Jupyter notebooks for crawling & training
+│   ├── 01_food-image-crawling.ipynb      # Web crawler using Selenium
+│   └── 02_food-image-classification.ipynb  # CNN + Transfer Learning model training
 ├── README.md                        # Project overview
-```
 
 
 ## 🚫 Notes on Image Usage
@@ -54,3 +52,40 @@ food-image-classification/
 
 Feel free to fork this repo and build your own food image classifier!  
 Explore, visualize, model — and don’t forget to clean your data! 🍜🧼
+
+
+## 📊 Final Results
+
+- **Final Accuracy**: 61%
+- **Macro F1-score**: 0.60
+- **Best Classes**: `banana`, `kiwi`, `pineapple` (F1 > 0.84)
+- **Weak Classes**: `capsicum`, `apple`, `corn`
+
+> Model: MobileNetV2 (frozen base)  
+> Optimizer: Adam + Learning Rate Scheduler  
+> Epochs: 30 with EarlyStopping & ModelCheckpoint
+
+
+## 🪜 What I Learned
+
+This project wasn’t about chasing perfect accuracy —  
+It was about building the entire computer vision workflow from scratch:
+
+- Crawling and cleaning image data myself
+- Experimenting with CNNs and transfer learning
+- Understanding the impact of data size & augmentation
+- Respecting ethical boundaries (no redistribution)
+- Making tradeoffs between exploration and deadlines
+
+## 🧠 Key Files & Resources
+
+| 📁 Resource | 🔗 Link |
+|------------|--------|
+| 📦 **Trained Model** (`best_model.h5`) | [Download from Google Drive](https://drive.google.com/file/d/1Qa55CoSG54oInE-lmYDbfJAyI1QJHcwd/view?usp=drive_link) |
+| 📘 **GitHub Repository** | [🔗 food-image-classification](https://github.com/hojjang98/food-image-classification) |
+| 📓 **Main Notebook (02)** – Model Training | [🔗 02_food-image-classification.ipynb](https://github.com/hojjang98/food-image-classification/blob/main/notebooks/02_food-image-classification.ipynb) |
+| 📓 **Crawling Notebook (01)** – Image Scraper | [🔗 01_food-image-crawling.ipynb](https://github.com/hojjang98/food-image-classification/blob/main/notebooks/01_food-image-crawling.ipynb) |
+
+
+> My biggest takeaway?  
+> 📌 Better data beats better models — and deadlines teach focus.
