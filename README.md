@@ -40,6 +40,7 @@ food-image-classification/
 │   ├── 01_food-image-crawling.ipynb        # Web crawler using Selenium
 │   └── 02_food-image-classification.ipynb  # CNN + Transfer Learning model training
 ├── README.md                         # Project overview
+```
 
 
 ## 🚫 Notes on Image Usage
