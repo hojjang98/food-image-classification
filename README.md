@@ -84,6 +84,7 @@ It was about building the entire computer vision workflow from scratch:
 | 📘 **GitHub Repository** | [🔗 food-image-classification](https://github.com/hojjang98/food-image-classification) |
 | 📓 **Main Notebook (02)** – Model Training | [🔗 02_food-image-classification.ipynb](https://github.com/hojjang98/food-image-classification/blob/main/notebooks/food-image-classification.ipynb) |
 | 📓 **Crawling Notebook (01)** – Image Scraper | [🔗 01_food-image-crawling.ipynb](https://github.com/hojjang98/food-image-classification/blob/main/notebooks/food-image-crawling.ipynb) |
+| 📊 **Figures** – Accuracy, Loss, Confusion Matrix & Prediction Samples | [🔗 figures/](https://github.com/hojjang98/food-image-classification/tree/main/figures) |
 
 > My biggest takeaway?  
 > 📌 Better data beats better models — and deadlines teach focus.
